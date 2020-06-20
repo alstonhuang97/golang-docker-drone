@@ -12,6 +12,7 @@ steps:
 - name: notify
   image: plugins/slack
   settings:
-    webhook: https://hooks.slack.com/services/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
+    webhook:
+      from_secret: slack_webhook
   when:
     status: [ success, failure ]
