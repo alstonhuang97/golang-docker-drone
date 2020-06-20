@@ -12,6 +12,6 @@ steps:
 - name: notify
   image: plugins/slack
   settings:
-    webhook: https://hooks.slack.com/services/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
-    channel: jenkins-bot
-    username: drone
+    webhook: https://hooks.slack.com/services/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
+  when:
+    status: [ success, failure ]
