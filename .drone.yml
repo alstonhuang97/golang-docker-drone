@@ -8,3 +8,10 @@ steps:
   commands:
   - go build
   - go test
+
+- name: notify
+  image: plugins/slack
+  settings:
+    webhook: https://hooks.slack.com/services/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
+    channel: jenkins-bot
+    username: drone
